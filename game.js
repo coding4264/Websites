@@ -1,8 +1,10 @@
 var player = document.getElementById("player");
 var block = document.getElementById("block");
+var score1 = NaN || 0
 function jump(){
     if(player.classList != "animate"){
         player.classList.add("animate");
+        score1+=1;
     }
     setTimeout(function(){
         player.classList.remove("animate");
@@ -15,5 +17,6 @@ var dead = setInterval(function(){
         block.style.animation = "none";
         block.style.display = "none";
         alert("You Lost :(");
+        alert("Score: " + score1)
     }
 },10);
