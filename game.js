@@ -16,7 +16,6 @@ var dead = setInterval(function(){
     if(blockleft<20 && blockleft>0 && playertop>=130){
         block.style.animation = "none";
         block.style.display = "none";
-        alert("You Lost :(");
-        alert("Score: " + score1)
+        alert("You Lost :(\n"+"Score: " + score1)
     }
 },10);
